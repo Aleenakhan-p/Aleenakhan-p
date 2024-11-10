@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Css|Aleena Khan </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="p-20 bg-slate-900" id="body">
+   <!-- Heading -->
+<h1 id="heading" class="text-white text-center text-5xl mb-10">Exploring Tailwind Css</h1>
+<!-- Sub-heading -->
+<div class="flex justify-center" >
+    <div id="frameborder" class="border-4 h-8 w-5 border-transparent border-l-yellow-500 mb-5 "></div>
+    <div class="text-yellow-500  text-2xl font-thin border-transparent">CSS FrameWork</div>
+</div>
+
+<!-- Bottom Border line starts here-->
+<div class="md:hidden  border-yellow-400 border-b justify-center ml-80 max-w-40 "></div> 
+<!-- Bottom Border line ends here-->
+
+<!--Image and Content block starts-->
+<div class="text-black text-xl bg-white rounded-md border-2 border-yellow-400 w-full h-auto m-auto md:w-60 md:h-40 md:flex md:flex-row flex flex-col items-center">
+    <div class="w-full md:h-full h-28 rounded overflow-hidden mb-1 md:mr-3">
+        <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/29101851/pexels-photo-29101851/free-photo-of-scenic-autumn-road-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Background image">
+    </div>
+    <div class="text-sm">
+        <p class="uppercase border-b-2 border-yellow-400 font-semibold text-center m-4">Aleena Khan</p>
+        <p class="font-light text-center  ">Exploring <span class="bg-yellow-400 text-black font-semibold">Tailwind CSS</span> - Dated: 10-11-2024</p>
+    </div>
+</div>
+<!-- Image and content block ends-->
+
+<!--Button starts here-->
+ <div class="flex justify-between mt-5" >
+    <div >
+        <button class="text-white text-3xl font-mono  p-4 mr-2 md:mr-0 rounded-md bg-blue-400  hover:bg-red-600 " onclick="dark()">In Dark Mode</button>
+    </div>
+    <div>
+        <button class="text-white text-3xl font-mono p-4 mr-0 md:mr-0 rounded-md bg-blue-400 hover:bg-green-600" onclick="light()">In Light Mode</button>
+    </div>
+</div> 
+<!--Button ends here-->
+
+<!--JavaScript script starts here-->
+<script>
+ function dark(){
+document.getElementById("body").style.backgroundColor="#0f172a";    
+document.getElementById("heading").style.color="white"; 
+document.getElementById("frameborder").style.borderLeft=" 3px solid #eab308";
+}
+
+ function light(){
+document.getElementById("body").style.backgroundColor="white";  
+document.getElementById("heading").style.color="black";
+document.getElementById("frameborder").style.border="none"; 
+ 
+ }
+</script>
+ <!--JavaScript script ends here-->
+
+</body>
+</html>
